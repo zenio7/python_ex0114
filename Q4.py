@@ -5,7 +5,7 @@ def solution(k, a, b):
     flag = 0 #number of swiches
     a.sort()
     b.sort(reverse=True) #for goal, list b descending
-    while flag < k and ia < lenli and ib < lenli:
+    while flag < k and ib < lenli:
         if(a[ia]<=b[ib]) : 
             a[ia] = b[ib]
             ia +=1
